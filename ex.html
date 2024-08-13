@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my css test</title>
+    <style>
+        #logo {
+            color : #0e4f1f;
+            text-decoration : none;
+            font-weight: bold;
+            font-size : 22px;
+            flex: 1 1 0;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-block-end: 1px solid #ccc;
+            align-items: center;
+            column-gap: 30px;
+        }
+
+        nav > div{
+            display: flex;
+        }
+
+        #menu{
+            flex: 5 1 0;
+        }
+
+        a {
+            margin: 0 5px;
+            /* 위아래는 0 오른/왼쪽은 5px */
+            padding: 5px 15px;
+            border-radius: 3px 3px 0 0;
+            /* 왼쪽 위부터 시계방향으로 */
+            background-color: #ddaa00;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        a:hover, #login:hover {
+            background-color: #ffcc22;
+            color: black;
+        }
+
+        #login {
+            justify-content: flex-end;
+            margin: 0 5px;
+            /* 위아래는 0 오른/왼쪽은 5px */
+            padding: 5px 15px;
+            border-radius: 3px 3px 0 0;
+            /* 왼쪽 위부터 시계방향으로 */
+            text-decoration: none;
+            font-size: 12px;
+            color: yellowgreen;
+            flex: 0.2 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div id="logo">ROSEONE</div>
+        <div id="menu">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/jobs">Careers</a>
+        <a href="/contact">Contact Us</a>
+        </div>
+        <div id="login">LOGIN</div>
+    </nav>
+</body>
+
+</html>
